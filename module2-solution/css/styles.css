@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px;
+}
+
+.title {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+.content-block {
+    background: rgb(223, 223, 223);
+    border: 1px solid black;
+}
+
+.content-header {
+    float: right;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+    border: 1px solid black;
+}
+
+.content {
+    clear: both;
+    padding: 0px 20px;
+}
+
+.content-one {
+    float: left;
+    width: 95%;
+    margin: 2.5%;
+}
+.content-one > .content-header { background: blue; color: white;}
+.content-two {
+    float: left;
+    width: 95%;
+    margin: 2.5%;
+}
+.content-two > .content-header { background: red;}
+.content-three {
+    float: left;
+    width: 95%;
+    margin: 2.5%;
+}
+.content-three > .content-header { background: green;}
+
+@media (min-width: 992px) {
+    .content-block {
+        min-height: 200px;
+    }
+    .content-one {
+        width: 31%;
+        margin: 1.15%;
+    }
+    .content-two {
+        width: 31%;
+        margin: 1.15%;
+    }
+    .content-three {
+        width: 31%;
+        margin: 1.15%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-block {
+        min-height: 200px;
+    }
+    .content-one {
+        width: 48%;
+        margin: 1%;
+    }
+    .content-two {
+        width: 48%;
+        margin: 1%;
+    }
+    .content-three {
+        width: 98%;
+        margin: 1%;
+    }
+}
